@@ -23,7 +23,7 @@ All event data is sourced from the [Ticketmaster API](https://developer.ticketma
 
 ## Set-up
 
-If you wish to run this project locally, there are a few requirements beforehand - the main one being a Firebase config file. If this is something you are interested in, please [contact me](https://github.com/AlexMc93) and I will be happy to help. Then you will be able to follow the steps below:
+If you wish to run this project locally, there are quite a few requirements beforehand - the main one being a Firebase config file. If this is something you are interested in, please [contact me](https://github.com/AlexMc93) and I will be happy to help (particularly if you are a prospective employer...). Then you will be able to follow the steps below:
 
 Firstly, you will need [Node.js](https://nodejs.org/en/) (v14.14.0 or later), which can be checked by running `node -v` in your terminal. Secondly, you will need an editor to run the code; [VS Code](https://code.visualstudio.com/download) is a popular choice and the one I would recommend. Finally, [Expo CLI](https://docs.expo.io/get-started/installation/) is what allows us to open the app either on a device or a simulator/emulator. This can be installed by running `npm install --global expo-cli`. An account is not required in order to view this app, so there is no need to register or log in.
 
