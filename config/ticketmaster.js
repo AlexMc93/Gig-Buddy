@@ -1,6 +1,6 @@
 import axios from 'axios';
+import { apiKey } from './apiKey';
 
-const apiKey = 'apikey=v1DQXdduptbOblISnoeBRMNvW5eBDgfj&';
 const request = axios.create({
     baseURL: "https://app.ticketmaster.com/discovery/v2"
 })

@@ -1,14 +1,12 @@
-import * as api from "../my-app/api/ticketmaster";
+import * as api from "../config/ticketmaster";
 import React, { Component } from "react";
 import {
   Text,
   View,
   StyleSheet,
   ScrollView,
-  StatusBar,
   SafeAreaView,
   TextInput,
-  Button,
   Platform,
   Alert,
   Image
@@ -16,11 +14,9 @@ import {
 import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 import * as Permissions from "expo-permissions";
-import * as colours from "../my-app/config/colours";
 import { TouchableHighlight, TouchableOpacity } from "react-native-gesture-handler";
 
 export default class EventList extends Component {
-  // need to return to this and adjust the default map values so it looks good on both platforms!!!
 
   state = {
     events: [],
@@ -123,7 +119,7 @@ export default class EventList extends Component {
               title="Your location"
               key="user"
               coordinate={userLocation}
-              image={require("../my-app/assets/user-loc-pin.png")}
+              image={require("../assets/user-loc-pin.png")}
             />
           ) : null}
           {events.map((event) => {
@@ -132,7 +128,7 @@ export default class EventList extends Component {
               <Marker
                 title={event.name}
                 description={`${event.date}`}
-                image={require("../my-app/assets/mini-stratocaster.png")}
+                image={require("../assets/mini-stratocaster.png")}
                 key={event.id}
                 coordinate={{
                   latitude: +event.location.latitude,
@@ -150,7 +146,7 @@ export default class EventList extends Component {
           })}
         </MapView>
         <View style={{justifyContent: 'center', flex: 0.3, borderColor: 'grey', borderBottomWidth: 1, borderTopWidth: 1}}>
-            <Image source={require('../my-app/assets/events-title.png')} style={styles.eventTitle} />
+            <Image source={require('../assets/events-title.png')} style={styles.eventTitle} />
         </View>
         <ScrollView style={styles.container}>
           {errMsg ? (

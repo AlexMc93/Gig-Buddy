@@ -4,7 +4,6 @@ import {
   SafeAreaView,
   Text,
   StyleSheet,
-  Button,
   View,
   Alert,
   Dimensions,
@@ -16,7 +15,7 @@ import {
   toggleUserAtEvent,
   eventDocExists,
   createUserArrays,
-} from "../my-app/config/fireBaseMethods";
+} from "../config/fireBaseMethods";
 import { FlatList, TouchableHighlight } from "react-native-gesture-handler";
 import ChatRoom from "./ChatRoom.js";
 
@@ -253,7 +252,7 @@ export default class EventPage extends Component {
           }}
           >
           <Marker
-            image={require("../my-app/assets/mini-stratocaster.png")}
+            image={require("../assets/mini-stratocaster.png")}
             key={id}
             coordinate={{
               latitude: +location.latitude,

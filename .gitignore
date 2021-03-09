@@ -10,13 +10,15 @@ npm-debug.*
 web-build/
 package-lock.json
 package-lock.json~6718d3b56e330ccac274b924b32c040f4844147e
-/my-app/config/firbase.js
+/config/firebase.js
+/config/apiKey.js
 
 # macOS
 .DS_Store
 
 .package-lock.json
-/my-app/config/firbase.js
+/config/firebase.js
+/config/apiKey.js
 /components/NewPageIgnored.js
 
 
