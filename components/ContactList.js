@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet, FlatList, Image } from "react-native";
-import { firestore } from "../my-app/config/firebase";
+import { firestore } from "../config/firebase";
 import ChatRoom from "../components/ChatRoom";
 import { TouchableOpacity } from "react-native-gesture-handler";
 

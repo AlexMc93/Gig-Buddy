@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useCallback } from "react";
-import { Button, View, Text, StyleSheet } from "react-native";
+import React, { useEffect, useState } from "react";
+import { View, Text, StyleSheet } from "react-native";
 import { TouchableHighlight } from "react-native-gesture-handler";
-import { firestore } from "../my-app/config/firebase";
+import { firestore } from "../config/firebase";
 
 export default function ChatRoom(props) {
   const { navigation } = props;

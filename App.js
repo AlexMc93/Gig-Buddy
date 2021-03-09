@@ -2,11 +2,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import SignInUp from "./components/SignInUp";
 import React, { Component } from "react";
-import { StyleSheet, Text, View, Button, Image, Dimensions } from "react-native";
+import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
 import EventList from "./components/EventList";
 import EventPage from "./components/EventPage";
 import Profile from "./components/Profile";
-import { loggingOut, getUserInfo } from "./my-app/config/fireBaseMethods";
+import { loggingOut, getUserInfo } from "./config/fireBaseMethods";
 import * as firebase from "firebase";
 import "firebase/auth";
 import GroupChat from "./components/GroupChat";
@@ -46,11 +46,11 @@ export default class App extends Component {
           headerStyle: { backgroundColor: '#33e4ff', borderBottomColor: 'grey', borderBottomWidth: 2},
           headerLeft: () => 
             <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton} >
-            <Image style={styles.backImage} source={require('./my-app/assets/back-button.png')} />
+            <Image style={styles.backImage} source={require('./assets/back-button.png')} />
             </TouchableOpacity>,
           headerTitle: () => 
             <TouchableOpacity onPress={() => navigation.navigate("Events")} style={styles.logoOpacity}>
-              <Image style={styles.miniLogo} source={require('./my-app/assets/mini-logo.png')}/>
+              <Image style={styles.miniLogo} source={require('./assets/mini-logo.png')}/>
             </TouchableOpacity>,
           headerTitleAlign: 'center',
           headerRight: () => (
@@ -98,7 +98,7 @@ export default class App extends Component {
           <Stack.Screen name={"Events"} options={
             {headerLeft: () => 
             <TouchableOpacity>
-            <Image style={styles.backImage} source={require('./my-app/assets/back-button.png')} />
+            <Image style={styles.backImage} source={require('./assets/back-button.png')} />
             </TouchableOpacity>,}}
             >
             {(props) => (

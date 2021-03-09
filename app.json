@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "splash": {
-      "image": "./my-app/assets/mini-logo.png",
+      "image": "./assets/mini-logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#33e4ff"
     },
@@ -19,12 +19,12 @@
     "android": {
       "softwareKeyboardLayoutMode": "pan",
       "adaptiveIcon": {
-        "foregroundImage": "./my-app/assets/mini-logo-square.png",
+        "foregroundImage": "./assets/mini-logo-square.png",
         "backgroundColor": "#33e4ff"
       }
     },
     "web": {
-      "favicon": "./my-app/assets/mini-logo.png"
+      "favicon": "./assets/mini-logo.png"
     }
   }
 }

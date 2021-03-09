@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View, TextInput, Image } from "react-native";
 import { TouchableHighlight } from "react-native-gesture-handler";
 import DialogInput from "react-native-dialog-input";
-import { firestore } from "../my-app/config/firebase";
+import { firestore } from "../config/firebase";
 import * as firebase from "firebase";
 import "firebase/auth";
 import "firebase/firestore";
-import { getUserInfo } from '../my-app/config/fireBaseMethods';
+import { getUserInfo } from '../config/fireBaseMethods';
 
 export default function App(props) {
-  const { navigation, app } = props;
+  const { app } = props;
   const [avatar, setAvatar] = useState(
     "https://image.freepik.com/free-vector/sitting-man-playing-guitar_24877-62236.jpg"
   );

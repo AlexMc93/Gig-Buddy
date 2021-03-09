@@ -5,18 +5,15 @@ import {
   Text,
   View,
   TextInput,
-  Button,
   Alert,
   Image,
   Platform,
   Dimensions,
   SafeAreaView
 } from "react-native";
-import { registration, signIn } from "../my-app/config/fireBaseMethods";
-import * as colours from "../my-app/config/colours";
-import { TouchableHighlight, TouchableOpacity } from "react-native-gesture-handler";
+import { registration, signIn } from "../config/fireBaseMethods";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
-//set matching password - maybe some verification steps?
 export default function App({ navigation, login }) {
   const [firstName, setFirstName] = useState("");
   const [familyName, setFamilyName] = useState("");
@@ -83,7 +80,7 @@ export default function App({ navigation, login }) {
       <View style={styles.topSection}>
       <Image
         style={styles.image}
-        source={require("../my-app/assets/title-gig-buddy-guitar.png")}
+        source={require("../assets/title-gig-buddy-guitar.png")}
       />
       <Text style={styles.subTitle}>Connecting fans of live music!</Text>
       </View>
@@ -120,7 +117,7 @@ export default function App({ navigation, login }) {
       </View>
       
       <View style={styles.bottomSection}>
-      <Image style={styles.bottomImage} source={require("../my-app/assets/landing-page-bottom.png")} />
+      <Image style={styles.bottomImage} source={require("../assets/landing-page-bottom.png")} />
       </View>
 
       <StatusBar style="auto" />
@@ -131,7 +128,7 @@ export default function App({ navigation, login }) {
       <View style={styles.topSection}>
       <Image
         style={styles.image}
-        source={require("../my-app/assets/title-gig-buddy-guitar.png")}
+        source={require("../assets/title-gig-buddy-guitar.png")}
       />
       <Text style={styles.subTitle}>Connecting fans of live music!</Text>
       </View>
@@ -189,7 +186,7 @@ export default function App({ navigation, login }) {
       </View>
 
       <View style={styles.bottomSection}>
-      <Image style={styles.bottomImage} source={require("../my-app/assets/landing-page-bottom.png")} />
+      <Image style={styles.bottomImage} source={require("../assets/landing-page-bottom.png")} />
       </View>
 
       <StatusBar style="auto" />
