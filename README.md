@@ -4,6 +4,8 @@ Gig Buddy is a cross-platform mobile app designed to help music fans connect wit
 
 Users can create a profile, browse through thousands of events based on their location or a city of their choice, let others know they are looking for someone to attend a specific gig with and message potential new buddies through the in-app chat.
 
+[See a demonstration of the app here](https://www.youtube.com/watch?v=vSuypinMyuo)
+
 ## Collaborators
 
 This project was built during the project phase of my time on the [Northcoders](https://northcoders.com/) full-stack bootcamp, on a two-week long sprint in collaboration with a fantastic team - [Kieran Cookson](https://github.com/kieran170), [Claire Castanet](https://github.com/ClaireAdele), [Ola Al-Droubi](https://github.com/Ola-A-Aldroubi) and [Abdalla Warsame](https://github.com/warsameabdalla). Special thanks must also go to the amazing tutors at Northcoders for their expertise, guidance and patience!
